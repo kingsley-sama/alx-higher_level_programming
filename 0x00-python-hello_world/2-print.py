@@ -1,1 +1,1 @@
-print("holbertonschool-low_level_programming")
+print("\"Programming is like building a multilingual puzzle")
