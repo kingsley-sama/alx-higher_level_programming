@@ -5,4 +5,4 @@ for i in range(26, 0, -1):
         j = i + 96
     else:
         j = i + 64
-    print(f"{chr(j)}", end='')
+    print("{}".format(chr(j)), end='')
