@@ -26,9 +26,8 @@ while (slow != quick)
 slow = slow->next;
 quick = quick->next;
 }
-}
-}
-if (quick != NULL)
 return (1);
+}
+}
 return (0);
 }
