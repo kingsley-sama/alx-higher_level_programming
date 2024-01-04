@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-def add(a, b):
+def magic_calculation(a, b):
     """adds params
     exponents them and returns result
     """
