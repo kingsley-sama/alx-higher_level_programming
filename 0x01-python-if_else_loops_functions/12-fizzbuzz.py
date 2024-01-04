@@ -8,4 +8,4 @@ for i in range(1, 101):
         elif i % 3 == 0 and i % 5 == 0:
             print("Fizzbuzz", end=" ")
         else:
-            print("{i}".format(i), end=" ")
+            print("{}".format(i), end=" ")
