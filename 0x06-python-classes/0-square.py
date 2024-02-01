@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-
-"""Define a class Square"""
+"""
+The square class defines the basic template for building other square classes
+"""
 
 
 class Square:
-    """Represent a square"""
     pass
