@@ -7,6 +7,6 @@ Defines a Square class:
 
 
 class Square:
-    """Simplest implementation of the Square class"""
+    """Square class With private attribute"""
     def __init__(self, size):
         self.__size = size
