@@ -8,4 +8,5 @@ Defines a Square class:
 
 class Square:
     """Simplest implementation of the Square class"""
-    pass
+    __init__(self):
+    self.__size
