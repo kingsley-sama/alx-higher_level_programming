@@ -13,4 +13,3 @@ def __init__(self, id=0):
     else:
         self.__nb_objects += 1
         self.id = __nb_objects
-
