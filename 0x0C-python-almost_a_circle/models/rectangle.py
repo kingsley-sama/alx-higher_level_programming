@@ -22,7 +22,7 @@ class Rectangle(Base):
     def width(self, value):
         """Sets the width"""
         if not isinstance(value, int):
-            raise TypeError("width must be an integer")
+            raise TypeError("wdth must be an integer")
         elif value <= 0:
             raise ValueError("width must be > 0")
         self.__width = value
@@ -51,7 +51,11 @@ class Rectangle(Base):
         """Sets x"""
         if not isinstance(value, int):
             raise TypeError("x must be an integer")
+        elif value <= 0:
+            raise ValueError("x must be >= 0")
+        self.__height = value
         self.__x = value
+        
 
     @property
     def y(self):
@@ -63,4 +67,6 @@ class Rectangle(Base):
         """Sets y"""
         if not isinstance(value, int):
             raise TypeError("y must be an integer")
+        elif value <= 0:
+            raise ValueError("x must be >= 0")
         self.__y = value
