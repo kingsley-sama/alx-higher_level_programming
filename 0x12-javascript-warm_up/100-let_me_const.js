@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/node
 const letMeConst = () => {
   myVar = 333;
   return (myVar);
