@@ -1,6 +1,5 @@
 #!/usr/bin/env node
-const { constants } = require('node:perf_hooks');
-const { argv, argv0 } = require('node:process');
+const { argv } = require('process');
 if (argv[2]) {
   console.log(argv[2]);
 } else {
