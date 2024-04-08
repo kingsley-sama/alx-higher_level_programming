@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/node
 function addMeMaybe (num, fun) {
   num++;
   fun(num);
