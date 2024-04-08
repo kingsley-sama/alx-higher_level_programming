@@ -1,5 +1,5 @@
-#!/usr/bin/env node
-const { argv } = require('node:process');
+#!/usr/bin/node
+const { argv } = require('process');
 if (argv.length >= 4) {
   secondLarges(argv);
 } else {
