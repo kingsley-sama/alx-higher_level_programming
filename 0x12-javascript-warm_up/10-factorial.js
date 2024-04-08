@@ -8,6 +8,8 @@ function factorial (num) {
     return (1);
   } else if (parseInt(num) === 1) {
     return (1);
+  }else if (NaN){
+    return (1);
   }
   num = num * factorial(num - 1);
   return (num);
