@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/node
 function callMeMoby (num, func) {
   while (num > 0) {
     func();
