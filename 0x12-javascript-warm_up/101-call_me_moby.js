@@ -1,11 +1,8 @@
 #!/usr/bin/env node
-function callMeMoby(num, func) 
-{
-    while(num > 0)
-    {
-      func();
-      num--;
-    }
-    return;
+function callMeMoby (num, func) {
+  while (num > 0) {
+    func();
+    num--;
+  }
 }
 module.exports.callMeMoby = callMeMoby;
