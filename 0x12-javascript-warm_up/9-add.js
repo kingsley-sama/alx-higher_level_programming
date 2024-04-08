@@ -1,7 +1,7 @@
-#!/usr/bin/env node
+#!/usr/bin/node
 const { argv } = require('node:process');
-a = argv[2];
-b = argv[3];
+const a = argv[2];
+const b = argv[3];
 if (a && b) {
   add(a, b);
 } else {
