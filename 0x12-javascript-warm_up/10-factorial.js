@@ -6,8 +6,6 @@ if (parseInt(argv[2])) {
 function factorial (num) {
   if (parseInt(num) === 0) {
     return (1);
-  } else if (parseInt(num) === 1) {
-    return (1);
   }else if (NaN){
     return (1);
   }
