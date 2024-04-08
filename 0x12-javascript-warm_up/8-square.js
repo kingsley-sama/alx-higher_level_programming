@@ -9,5 +9,5 @@ if (parseInt(argv[2])) {
     console.log(line);
   }
 } else {
-  console.log('Missing Size');
+  console.log('Missing size');
 }
