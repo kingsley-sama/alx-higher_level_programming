@@ -1,6 +1,6 @@
 #!/usr/bin/node
 const { argv } = require('process');
-if (argv.length >= 4) {
+if (argv.length > 3) {
   secondLarges(argv);
 } else {
   console.log(0);
@@ -15,7 +15,7 @@ function secondLarges (arg) {
     max = arg[3];
     min = arg[2];
   }
-  for (let i = 4; i < arg.length; i++) {
+  for (let i = 2; i < arg.length; i++) {
     if (arg[i] > max) {
       min = max;
       max = arg[i];
