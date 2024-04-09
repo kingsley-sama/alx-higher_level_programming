@@ -10,11 +10,12 @@ class Rectangle {
   }
 
   print () {
-    if (!this.height || !this.width){
-      return;
-    }
     for (let i = 0; i < this.height; i++) {
-      console.log(('X').repeat(this.width));
+      let line = '';
+      for (let k = 0; k < this.width; k++) {
+        line += 'X';
+      }
+      console.log(line);
     }
   }
 }
