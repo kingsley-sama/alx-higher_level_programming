@@ -1,15 +1,8 @@
 #!/usr/bin/node
 
 class Square extends require('./5-square') {
-  constructor (s) {
-    super(s);
-    if (s > 0) {
-      this.size = s;
-    }
-  }
-
   charPrint (c) {
-    if (!c) {
+    if (c === undefined) {
       c = 'X';
     }
     for (let i = 0; i < this.size; i++) {
