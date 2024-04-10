@@ -1,19 +1,17 @@
 #!/usr/bin/node
-
+/**
+* Square class that inherits from previous square class
+*/
 class Square extends require('./5-square') {
-  constructor (s) {
-    super(s);
-    this.size = s;
-  }
-
   charPrint (c) {
+    let char = c;
     if (c === undefined) {
-      c = 'X';
+      char = 'X';
     }
-    for (let i = 0; i < this.size; i++) {
+    for (let i = 0; i < this.height; i++) {
       let line = '';
-      for (let k = 0; k < this.size; k++) {
-        line += c;
+      for (let k = 0; k < this.width; k++) {
+        line += char;
       }
       console.log(line);
     }
