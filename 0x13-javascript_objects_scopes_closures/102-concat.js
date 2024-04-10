@@ -10,7 +10,7 @@ if (a && b && c) {
   concat(a, b);
 }
 
-function concat(a, b) {
+function concat (a, b) {
   try {
     const fileA = fs.readFileSync(a, 'utf-8');
     const fileB = fs.readFileSync(b, 'utf-8');
