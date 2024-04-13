@@ -3,23 +3,20 @@
 import MySQLdb
 import sys
 a = sys.argv[1]
-b = sys.argv[2]
-c = sys.argv[3]
 
 
-def connectDb(a, b, c):
+def connectDb():
 
     """this functions makes a connection to the database"""
-    if (a and b and c):
-        dbConnect = MySQLdb.connect(user=a, password=b, database=c)
-        cur = dbConnect.cursor()
-        cur.execute("SELECT * FROM states")
-        data = cur.fetchall()
-        for i in data:
-            print(i)
-        cur.close()
-        dbConnect.close()
+    dbConnect = MySQLdb.connect(user=sys.argv[1], password=sys.argv[2], database=sys.argv[3], host="localhost", port=3306)
+    cur = dbConnect.cursor()
+    cur.execute("SELECT * FROM states")
+    data = cur.fetchall()
+    for i in data:
+        print(i)
+    cur.close()
+    dbConnect.close()
 
 
 if __name__ == "__main__":
-    connectDb(a, b, c)
+    connectDb()
