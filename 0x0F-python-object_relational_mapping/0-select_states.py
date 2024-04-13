@@ -11,12 +11,14 @@ def connectDb(a, b, c):
 
     """this functions makes a connection to the database"""
     if (a and b and c):
-        dbConnect = MySQLdb.connect(username=a, password=b, database=c)
+        dbConnect = MySQLdb.connect(user=a, password=b, database=c)
         cur = dbConnect.cursor()
         cur.execute("SELECT * FROM states")
         data = cur.fetchall()
         for i in data:
             print(i)
+        cur.close()
+        dbConnect.close()
 
 
 if __name__ == "__main__":
