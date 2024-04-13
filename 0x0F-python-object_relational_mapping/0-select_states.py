@@ -2,13 +2,16 @@
 """ This module defines the connectDb function that conects to a database"""
 import MySQLdb
 import sys
-a = sys.argv[1]
 
 
 def connectDb():
 
     """this functions makes a connection to the database"""
-    dbConnect = MySQLdb.connect(user=sys.argv[1], password=sys.argv[2], database=sys.argv[3], host="localhost", port=3306)
+    dbConnect = MySQLdb.connect(user=sys.argv[1],
+                                password=sys.argv[2],
+                                database=sys.argv[3],
+                                host="localhost",
+                                port=3306)
     cur = dbConnect.cursor()
     cur.execute("SELECT * FROM states")
     data = cur.fetchall()
