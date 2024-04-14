@@ -13,6 +13,7 @@ def connectDb():
                                 host="localhost",
                                 port=3306)
     cur = dbConnect.cursor()
+    cur.execute("SELECT cities.id, cities.name, states.name FROM cities JOIN states ON cities.state_id = states.id ORDER BY cities.id ASC")
     data = cur.fetchall()
     for i in data:
         print(i)
