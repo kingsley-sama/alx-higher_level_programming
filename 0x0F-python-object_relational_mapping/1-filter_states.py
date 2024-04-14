@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-""" This module defines the connectDb function that conects to a database"""
+""" This module defines filter state that returns all states starting with N"""
 import MySQLdb
 import sys
 
 
-def connectDb():
+def findstate():
 
-    """this functions makes a connection to the database"""
+    """this functions makes a connection to the database and filters state"""
     dbConnect = MySQLdb.connect(user=sys.argv[1],
                                 password=sys.argv[2],
                                 database=sys.argv[3],
@@ -22,4 +22,4 @@ def connectDb():
 
 
 if __name__ == "__main__":
-    connectDb()
+    findstate()
