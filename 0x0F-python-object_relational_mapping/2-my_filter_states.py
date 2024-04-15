@@ -13,7 +13,8 @@ def findstate():
                                 host="localhost",
                                 port=3306)
     cur = dbConnect.cursor()
-    cur.execute("SELECT * FROM states WHERE name = '{}'".format(sys.argv[4]))
+    cur.execute("SELECT * FROM states WHERE name = '{}' ORDER BY id ASC;".
+                format(sys.argv[4]))
     data = cur.fetchall()
     for i in data:
         print(i)
