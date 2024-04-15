@@ -18,7 +18,8 @@ def findstate():
                 format(sys.argv[4]))
     data = cur.fetchall()
     for i in data:
-        print(i)
+        if i[1] == sys.argv[4]:
+            print(i)
     cur.close()
     dbConnect.close()
 
