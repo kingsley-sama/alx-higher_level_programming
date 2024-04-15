@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 # List all states with a name starting with uppercase N
-# Username, password, and database names are given as user args
-# New updates should be commited properly
 import MySQLdb
 import sys
 
