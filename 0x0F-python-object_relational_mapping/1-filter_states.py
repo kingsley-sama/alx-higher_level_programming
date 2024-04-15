@@ -13,7 +13,7 @@ def findstate():
                                 host="localhost",
                                 port=3306)
     cur = dbConnect.cursor()
-    cur.execute("SELECT id, name FROM states WHERE name LIKE 'N%'")
+    cur.execute("SELECT id, name FROM states WHERE name LIKE 'N%' ORDER BY id ASC;")
     data = cur.fetchall()
     for i in data:
         print(i)
