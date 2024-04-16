@@ -18,7 +18,8 @@ def findstate():
     ORDER BY id ASC;""")
     data = cur.fetchall()
     for i in data:
-        print(i)
+        if i[1][0] == 'N':
+            print(i)
     cur.close()
     dbConnect.close()
 
