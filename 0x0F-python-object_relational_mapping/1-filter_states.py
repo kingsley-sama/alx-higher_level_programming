@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-# List all states with a name starting with uppercase N
+"""This module writes the findstate function"""
 import MySQLdb
 import sys
 
 
 def findstate():
 
-    """this functions makes a connection to the database and filters state"""
+    """filters all states starting with the letter N"""
     dbConnect = MySQLdb.connect(user=sys.argv[1],
                                 password=sys.argv[2],
                                 database=sys.argv[3],
